@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Http\Controllers\Admin\ComplitedTasks;
+namespace App\Http\Controllers\Admin\complitedTasks;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Http\Requests\Admin\ComplitedTasks\StoreRequest;
-use App\Models\ComplitedTasks;
+use App\Http\Requests\Admin\complitedTasks\StoreRequest;
+use App\Models\complitedTasks;
 
 class StoreController extends Controller
 {
     public function __invoke(StoreRequest $request)
     {
         $data = $request->validated();
-        ComplitedTasks::create($data);
+        complitedTasks::create($data);
         return redirect(route('admin.complitedTasks'));
     }
 }

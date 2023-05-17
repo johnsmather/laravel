@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Admin\ComplitedTasks;
+namespace App\Http\Controllers\Admin\complitedTasks;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;

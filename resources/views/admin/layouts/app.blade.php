@@ -14,6 +14,11 @@
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a5c8a4418a.js" crossorigin="anonymous"></script>
 
+        <!-- Scripts -->
+        <link rel="stylesheet" href="public/build/app-5c99f777.css">
+    <link rel="stylesheet" href="public/build/app-4ed993c7.js">
+    <link rel="stylesheet" href="public/build/app-bab4fd4c.js">
+
     <!-- Scripts -->
 </head>
 <body>

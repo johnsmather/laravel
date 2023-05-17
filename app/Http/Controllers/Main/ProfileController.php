@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Main;
 
 use App\Http\Controllers\Controller;
-use App\Models\ComplitedTasks;
+use App\Models\complitedTasks;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -13,7 +13,7 @@ class ProfileController extends Controller
     public function __invoke()
     {
         $user = Auth::user();
-        $complited_tasks = ComplitedTasks::all()
+        $complited_tasks = complitedTasks::all()
                                             ->where('user_id', $user->id)
                                             ->sortByDesc('created_at');
         $test_points = $complited_tasks->where('category', 1)->sum('points');

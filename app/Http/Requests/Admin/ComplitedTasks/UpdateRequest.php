@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Admin\ComplitedTasks;
+namespace App\Http\Requests\Admin\complitedTasks;
 
 use Illuminate\Foundation\Http\FormRequest;
 

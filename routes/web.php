@@ -39,8 +39,8 @@ Route::group(['namespace' => 'Main'], function () {
         Route::get('/', [Main\Practice\IndexController::class, '__invoke'])->name('practices');;
         Route::get('/{practice}', [Main\Practice\ShowController::class, '__invoke'])->name('practices.show');
     });
-    Route::group(['namespace' => 'ComplitedTasks', 'prefix' => 'complitedTasks'], function () {
-        Route::post('/', [Main\ComplitedTasks\StoreController::class, '__invoke'])->name('complitedTasks.store');
+    Route::group(['namespace' => 'complitedTasks', 'prefix' => 'complitedTasks'], function () {
+        Route::post('/', [Main\complitedTasks\StoreController::class, '__invoke'])->name('complitedTasks.store');
     });
 });
 
@@ -84,7 +84,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['aut
         Route::patch('/{logical}', [Admin\Logical\UpdateController::class, '__invoke'])->name('admin.logical.update');
         Route::delete('/{logical}', [Admin\Logical\DeleteController::class, '__invoke'])->name('admin.logical.delete');
     });
-    Route::group(['namespace' => 'ComplitedTasks', 'prefix' => 'complitedTasks'], function () {
+    Route::group(['namespace' => 'complitedTasks', 'prefix' => 'complitedTasks'], function () {
         Route::get('/', [Admin\complitedTasks\IndexController::class, '__invoke'])->name('admin.complitedTasks');
         Route::get('/create', [Admin\complitedTasks\CreateController::class, '__invoke'])->name('admin.complitedTasks.create');
         Route::post('/', [Admin\complitedTasks\StoreController::class, '__invoke'])->name('admin.complitedTasks.store');
